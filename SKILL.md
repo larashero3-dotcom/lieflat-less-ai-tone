@@ -1,19 +1,19 @@
 ---
 name: lieflat-less-ai-tone
-description: 按 SKILL.md 明确列出的规则识别并改写中文写作中的 AI 痕迹。只能处理清单内的问题；未命中规则的文字必须原样保留，也不能改变文章框架。用于蒸馏产物写作完成后的最后一道工序。 Remove AI writing tells from Chinese text using an explicit whitelist of rules; leaves unmatched text untouched.
+description: 按 SKILL.md 明确列出的规则识别并改写中文写作中的 AI 痕迹。只能处理清单内的问题；未命中规则的文字必须原样保留，也不能改变文章框架。适用于写作完成后的成稿清理。 Remove AI writing tells from Chinese text using an explicit whitelist of rules; leaves unmatched text untouched.
 ---
 
 # 去AI味
 
 识别并改写中文文本中的 AI 写作痕迹。规则基于人类文章与多个模型输出的实测对比整理，每条都有可定位的触发标记。先判断体裁，再处理 AI 味。不能为了“像人写的”强加人称、口语或短段落。
 
-## 与写作蒸馏器配合
+## 有风格参考时先读它
 
-本 skill 是写作流程的最后一道工序。先蒸馏出 Writing-DNA，按 DNA 写作，最后用本 skill 去掉 AI 痕迹。
+本 skill 的多条规则需要判断“原语体”。第 7 条对文学体裁按原有风格判断，第 4 条和第 5 条要看作者本来的标点习惯，第 8 条要看原文有没有给出具体数据。
 
-同一目录下存在蒸馏产物时，先读 `语言DNA.md`（英文 `language-dna.md`）再改写。本 skill 多条规则需要判断“原语体”。第 7 条对文学体裁按原有风格判断，第 4 条和第 5 条要看作者本来的标点习惯，第 8 条要看原文有没有给出具体数据。蒸馏产物里的句长分布、标点习惯和用词偏好就是判断依据。
+如果同一目录下有描述目标风格的文档（写作风格指南、语言特征分析、`语言DNA.md` 一类的产物），先读它再改写，把它的句长分布、标点习惯和用词偏好作为判断依据。
 
-蒸馏产物与本规则冲突时，以蒸馏产物为准。那是目标作者的真实写法，不是 AI 痕迹。
+**风格文档与本规则冲突时，以风格文档为准。** 那是目标作者的真实写法，不是 AI 痕迹。比如某作者本来就爱用破折号，就不该按第 4 条删掉。
 
 ## 硬性边界（最高优先级）
 
