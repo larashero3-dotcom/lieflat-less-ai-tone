@@ -2,6 +2,8 @@
 
 [中文](README.md) | English
 
+[![less-ai-tone.skill: quantifying what "AI tone" actually is in Chinese writing, then removing it](assets/less-ai-tone-hero-en.png)](https://moxt.ai/hub?view=skill&id=lieflat-less-ai-tone)
+
 **An AI-tone removal skill grounded in a 2.83-million-character corpus study**
 
 This skill applies linguistic methods to quantify what "AI tone" actually is in Chinese writing, and to remove it.

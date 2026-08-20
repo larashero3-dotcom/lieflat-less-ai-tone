@@ -2,6 +2,8 @@
 
 中文 | [English](README.en.md)
 
+[![去AI味.skill：用语言学方法量化「什么是 AI 味」，再把它从中文写作里去掉](assets/less-ai-tone-hero-zh.png)](https://moxt.ai/zh-CN/hub?view=skill&id=lieflat-less-ai-tone)
+
 **一个基于 283 万字语料统计的去 AI 味 skill**
 
 这个 skill 希望用语言学的研究方式，来量化"什么是 AI 味"，并致力于去除 AI 写作的"AI 味"。
