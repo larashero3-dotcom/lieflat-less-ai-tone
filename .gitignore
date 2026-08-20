@@ -1,0 +1,11 @@
+.DS_Store
+__pycache__/
+*.pyc
+
+# 语料不入库：可能含版权或隐私内容
+corpus/
+raw-corpus/
+*-corpus/
+ai-control-group*/
+ai-samples/
+private/
