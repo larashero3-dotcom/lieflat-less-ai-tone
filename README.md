@@ -266,6 +266,6 @@ python3 scripts/check-translationese.py <目录...>
 
 ---
 
-**数据与代码** [scripts/](./scripts/) · **完整结果表** [RESEARCH.md](./RESEARCH.md) · **规则集** [SKILL.md](./SKILL.md) · **简版说明** [README.brief.md](./README.brief.md)
+**数据与代码** [scripts/](./scripts/) · **完整结果表** [RESEARCH.md](./RESEARCH.md) · **规则集** [SKILL.md](./SKILL.md)
 
 **许可** [MIT](./LICENSE)
