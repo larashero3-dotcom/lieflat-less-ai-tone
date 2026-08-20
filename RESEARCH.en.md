@@ -102,7 +102,7 @@ The ratio column is uniformly generated ÷ human; above 1 means generated text u
 | Em dash | "Unique to Claude, ×3" | gen 2.38, human 0.80 | 3.0× | 4 |
 | Opening formula (说白了) | Not quantified | gen 0.025, human 0.008 | 3.2× | 9 |
 | Ordinal as subheading | "29% of GPT paragraphs use ordinals" | gen 0.19, human 0.06 | 3.1× | 6 |
-| Material density (missing figures) | Not hypothesized; from English study | numerals gen 6.34, human 17.92 | 0.35× (human 2.8× higher) | 8 |
+| Material density (missing figures) | Not hypothesized | numerals gen 6.34, human 17.92 | 0.35× (human 2.8× higher) | 8 |
 | Adjacent-sentence isomorphism | Hypothesis was "tripartite parallelism ×7" | per 100 paragraphs gen 9.41, human 4.81 | 2.0× | 3 |
 | Dense enumeration commas | Same as above | gen 3.21, human 1.78 | 1.8× | 2 |
 | Translationese, five types | "English syntax retained", 18 types | only 5 qualify, see below | 2.6–5.3× | 10 |
@@ -126,23 +126,6 @@ The ratio column is uniformly generated ÷ human; above 1 means generated text u
 | Abstract noun with concrete verb | "Time safeguards details, anxiety takes shape" | gen 0.001, human 0.001 | 0.7× | Neither side writes this |
 | Nominalization | "Completed the optimization of…" | gen 0.003, human 0.005 | 0.52× | Humans higher; measuring abstract suffixes instead shows generated text 1.6× higher |
 | In-body ordinals | "GPT 29% vs human 4%" | sentence-initial 首先 gen 0.06, human 0.03 | 2× | Weakest form, and mid-sentence 第一 at 1.2× shows no difference |
-
-### Findings that contradict the English-language study
-
-*The Economist*, July 2026 (55,940 sentences, 1.2 million words, comparing ChatGPT/Claude/Gemini/Grok) reported that generated text uses less punctuation. On Chinese data only commas hold.
-
-| Metric | Generated | Human | *R* | vs. English study |
-|---|---|---|---|---|
-| Comma | 39.39 | 56.78 | 0.69× | Consistent (generated lower) |
-| Short-sentence rate (≤15 chars) | 14.9% | 18.4% | 0.81× | Consistent (generated lower) |
-| Semicolon | 1.64 | 0.95 | 1.73× | Contradicts |
-| Parenthesis | 3.50 | 2.10 | 1.67× | Contradicts |
-| Quotation mark | 14.65 | 4.87 | 3.01× | Contradicts |
-| Abstract suffixes (性/化/度/主义/机制) | 8.61 | 5.28 | 1.63× | Consistent (generated higher) |
-
-Quotation marks show the largest gap and the clearest reversal. Generated text uses more of them because it writes invented dialogue rather than citing real sources. The "models don't quote experts" finding surfaces differently in Chinese: sparse numerals and temporal anchors (2.8× and 2.6×), not fewer quotation marks.
-
-That study contributes two methodological points that apply directly here. A single word form cannot carry the judgment — calling a text AI-written because it contains "delve" is like calling one Austen's because it contains "imprudence". And every frequency has a shelf life; each model release moves closer to human style.
 
 ## Paragraph-level structure
 

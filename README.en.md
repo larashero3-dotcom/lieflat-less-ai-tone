@@ -188,23 +188,6 @@ The initial list specified 18 items on the criterion of direct transfer from Eng
 
 Three of the excluded items were part of this rule set's own initial version (以一种…的方式, 使得…能够, 扮演…角色), all measuring below 0.03. These are indeed translationese constructions, but they do not distinguish generated text; modern written Chinese has absorbed such syntax thoroughly.
 
-### 3.5 Comparison with English-language findings
-
-A comparable study published by *The Economist* in July 2026 (55,940 sentences, 1,200,000 words, contrasting ChatGPT / Claude / Gemini / Grok) reported lower punctuation density in generated text. This study replicates that only in part on Chinese data.
-
-| Metric | Generated | Human | vs. English study |
-|---|---|---|---|
-| Commas | 39.39 | 56.78 | Consistent |
-| Short-sentence rate (≤15 chars) | 14.9% | 18.4% | Consistent |
-| Abstract suffixes (性/化/度/主义) | 8.61 | 5.28 | Consistent |
-| Semicolons | 1.64 | 0.95 | Opposite |
-| Parentheses | 3.50 | 2.10 | Opposite |
-| Quotation marks | 14.65 | 4.87 | Opposite |
-
-Quotation marks show the largest and most clearly reversed difference. The English study attributed sparse punctuation partly to generated text not quoting sources, but on Chinese data the generated side's quotation density is triple the human side's, driven by invented dialogue rather than attributed sourcing. The "does not quote" tendency surfaces differently in Chinese: numeral density at 36% of the human side, temporal anchors at 39%. This finding grounds rule 8.
-
-That study offers two further methodological points directly relevant here. A single word form is insufficient as evidence — its analogy: judging a text machine-generated because it uses "delve" is like judging one to be Austen's because it uses "imprudence". And all frequency findings are time-limited, as model iterations converge toward human style.
-
 ## 4 From statistics to rewrite rules
 
 Statistical significance does not imply executability. Transcribing the eleven surviving features into rewrite rules required three constraints.
