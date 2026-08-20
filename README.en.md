@@ -1,5 +1,7 @@
 # Lieflat Less AI Tone
 
+[中文](README.md) | English
+
 **An AI-tone removal skill grounded in a 2.83-million-character corpus study**
 
 This skill applies linguistic methods to quantify what "AI tone" actually is in Chinese writing, and to remove it.

@@ -1,5 +1,7 @@
 # Lieflat Less AI Tone
 
+中文 | [English](README.en.md)
+
 **一个基于 283 万字语料统计的去 AI 味 skill**
 
 这个 skill 希望用语言学的研究方式，来量化"什么是 AI 味"，并致力于去除 AI 写作的"AI 味"。

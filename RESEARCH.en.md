@@ -1,5 +1,7 @@
 # Measured features of Chinese AI-generated text
 
+[中文](RESEARCH.md) | English
+
 This document records the **hypothesis and measured outcome for every rule**, including the hypotheses that were overturned. Rules rest on locatable formal features; the figures only decide whether a construction qualifies for inclusion.
 
 An early round of ratios based on 30 generated samples (sentence-length CV ×51, tripartite parallelism ×7.3, paragraph-initial ordinals 29%, em dashes "unique to Claude") failed to replicate against a larger corpus and has been discarded in full. Causes appear in the final section.
