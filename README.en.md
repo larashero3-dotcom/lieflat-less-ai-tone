@@ -2,7 +2,7 @@
 
 [中文](README.md) | English
 
-[![less-ai-tone.skill: quantifying what "AI tone" actually is in Chinese writing, then removing it](assets/less-ai-tone-hero-en.png)](https://moxt.ai/hub?view=skill&id=lieflat-less-ai-tone)
+[![less-ai-tone.skill: quantifying what "AI tone" actually is, then removing it](assets/less-ai-tone-hero-en.png)](https://moxt.ai/hub?view=skill&id=lieflat-less-ai-tone)
 
 **An AI-tone removal skill grounded in a 2.83-million-character corpus study**
 
@@ -225,7 +225,7 @@ The rule set ships as an Agent Skill.
 npx skills add larashero3-dotcom/lieflat-less-ai-tone
 ```
 
-Once installed, submitting Chinese text applies the rule set. `SKILL.md` also works directly as a system prompt in any tool accepting custom instructions.
+Once installed, submitting text applies the rule set. `SKILL.md` also works directly as a system prompt in any tool accepting custom instructions.
 
 When used alongside writing-style distillation there is no need to install this rule set separately; [writing-dna-skill](https://github.com/larashero3-dotcom/writing-dna-skill) bundles a copy, so installing that repository brings it along. The two form successive stages: the former approximates a target style, this rule set removes generation artifacts. Where distilled artifacts are present in the same directory, read `language-dna.md` first; where the two conflict, the artifacts take precedence, since they record how the target author actually writes and are not generation artifacts.
 

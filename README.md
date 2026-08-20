@@ -2,7 +2,7 @@
 
 中文 | [English](README.en.md)
 
-[![去AI味.skill：用语言学方法量化「什么是 AI 味」，再把它从中文写作里去掉](assets/less-ai-tone-hero-zh.png)](https://moxt.ai/zh-CN/hub?view=skill&id=lieflat-less-ai-tone)
+[![去AI味.skill：用语言学方法量化「什么是 AI 味」，再把它去掉](assets/less-ai-tone-hero-zh.png)](https://moxt.ai/zh-CN/hub?view=skill&id=lieflat-less-ai-tone)
 
 **一个基于 283 万字语料统计的去 AI 味 skill**
 
@@ -225,7 +225,7 @@ GPT 破折号频率之低，曾被用于论证该特征已失效。但 Claude �
 npx skills add larashero3-dotcom/lieflat-less-ai-tone
 ```
 
-安装后提交中文文本即按规则集处理。亦可直接将 `SKILL.md` 作为 system prompt 使用，适配任何支持自定义指令的工具。
+安装后提交文本即按规则集处理。亦可直接将 `SKILL.md` 作为 system prompt 使用，适配任何支持自定义指令的工具。
 
 与写作风格蒸馏配合使用时不必单独安装本规则集，[writing-dna-skill](https://github.com/larashero3-dotcom/writing-dna-skill) 已内置一份，装该仓库即随行。二者构成先后两道工序，前者负责风格逼近，本规则集负责清除生成痕迹。同目录存在蒸馏产物时优先读取 `语言DNA.md`；两者冲突时以蒸馏产物为准，因其记录的是目标作者的实际写法，不属生成痕迹。
 
