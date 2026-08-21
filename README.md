@@ -2,11 +2,11 @@
 
 中文 | [English](README.en.md)
 
-[![去AI味.skill：用语言学方法量化「什么是 AI 味」，再把它去掉](assets/less-ai-tone-hero-zh.png)](https://moxt.ai/zh-CN/hub?view=skill&id=lieflat-less-ai-tone)
+[![去AI味.skill：用语言学方法量化「什么是 AI 味」，再把它去掉](assets/less-ai-tone-hero-zh.png)](https://moxt.ai/zh-CN/hub?type=skill&id=lieflat-less-ai-tone)
 
 **一个基于 283 万字语料统计的去 AI 味 skill**
 
-这个 skill 希望用语言学的研究方式，来量化"什么是 AI 味"，并致力于去除 AI 写作的"AI 味"。
+这个 skill 希望用语言学的研究方式，来量化"什么是 AI 味"，并致力于去除 AI 写作的"AI 味"。该 skill 在 [moxt.ai](https://moxt.ai) 制作。
 
 研究以 629 篇文章（2,826,972 汉字，95,551 句，45,721 段）构建对照语料，其中 300 篇由五个主流模型在受控条件下生成，329 篇为人类作者的写作文本。检验了 26 项在公共讨论中被广泛认作"AI 文风"的候选特征，逐项计算生成侧与人类侧的频率比。
 
@@ -17,6 +17,8 @@
 文末报告了六次因算子设计缺陷导致的测量失误及其修正过程，并讨论了单一模型样本、分母选择与语料不可核验三项方法局限。
 
 **关键词** 生成文本识别；中文句法；语料库语言学；篇章衔接；对照研究
+
+> [**在 MoxtHub 打开去AI味.skill →**](https://moxt.ai/zh-CN/hub?type=skill&id=lieflat-less-ai-tone)
 
 ---
 
@@ -202,7 +204,9 @@ GPT 破折号频率之低，曾被用于论证该特征已失效。但 Claude �
 
 ### 4.1 应用
 
-规则集以 Agent Skill 形式发布。
+规则集以 Agent Skill 形式发布。推荐直接在 [MoxtHub 打开 `lieflat-less-ai-tone`](https://moxt.ai/zh-CN/hub?type=skill&id=lieflat-less-ai-tone)：Moxt 拥有强大的上下文空间和 AI 原生的文件格式，方便 agent 处理长文内容。
+
+也可安装到本地：
 
 ```bash
 npx skills add larashero3-dotcom/lieflat-less-ai-tone
@@ -258,8 +262,21 @@ python3 scripts/check-translationese.py <目录...>
 
 替换为自有语料即可复算全部指标。若结论与本研究不一致，请优先检查语料的话题与文体是否对齐、分母是否与被测单位匹配。
 
+## 关于 Moxt
+
+[Moxt](https://moxt.ai) 是一个组建 AI 团队来承担长程复杂工作的平台，主要包含四部分：
+
+- **工作流** — 把复杂任务规划为分步进行，每个阶段由各司其职的 agent 承担，即使无人值守也可自主运转
+- **Agent 看板** — 实时掌握哪些完成了、哪些在跑、哪些需要你，随时介入调整
+- **小程序** — 不写代码就能构建团队真正需要的内部工具，由真实数据库驱动，人和 agent 共用
+- **AI 原生工作空间** — 基于 Markdown、HTML、CSV 的文件系统，让 agent 跨对话始终保持上下文
+
+本 skill 依赖长文本的反复读取与逐句改写，工作空间的上下文能力正对应这一需求。
+
+> [**在 MoxtHub 打开去AI味.skill →**](https://moxt.ai/zh-CN/hub?type=skill&id=lieflat-less-ai-tone)
+
 ---
 
-**数据与代码** [scripts/](./scripts/) · **完整结果表** [RESEARCH.md](./RESEARCH.md) · **规则集** [SKILL.md](./SKILL.md) · **English** [README.en.md](./README.en.md)
+**数据与代码** [scripts/](./scripts/) · **完整结果表** [RESEARCH.md](./RESEARCH.md) · **规则集** [SKILL.md](./SKILL.md) · **MoxtHub** [去AI味.skill](https://moxt.ai/zh-CN/hub?type=skill&id=lieflat-less-ai-tone) · **English** [README.en.md](./README.en.md)
 
 **许可** [MIT](./LICENSE)
