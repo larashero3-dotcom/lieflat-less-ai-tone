@@ -2,6 +2,10 @@
 
 [中文](README.md) | English
 
+![Lieflat Less AI Tone: first-round research cover](assets/less-ai-tone-hero-en.png)
+
+<sub>The cover shows first-round figures. The latest two-round results are detailed below.</sub>
+
 **A post-draft Chinese writing skill built from two rounds of comparison: 629 articles in the first round, 270 matched pairs in the second, about 5.2 million Chinese characters in total, and about 500,000 model semantic judgments.** It reports what it found, cites passages from your draft, and proposes specific edits. It rewrites only after you respond, then runs a second check and shows the changes.
 
 ## What the study measured
