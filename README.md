@@ -1,6 +1,6 @@
 # Lieflat Less AI Tone
 
-中文 | [English](README.en.md)
+中文 | [English](README.en.md) | [日本語](README.ja.md)
 
 ![去 AI 味 Skill：约 520 万字、100+ 项指标、约 50 万次模型语义判断](assets/less-ai-tone-hero-zh.png)
 
