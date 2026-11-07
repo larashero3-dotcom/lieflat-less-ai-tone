@@ -44,7 +44,7 @@ python3 scripts/detect.py <文件> --candidates --out /tmp/candidates.json
 
 写法以指标表配合解释性段落为主。术语可以用，但要解释其含义；数字要有口径和参照，例句要能在原稿定位。目标是让用户清楚看到“检测依据 → 本篇命中 → 原文例子 → 具体改法”，而不是只看到形容词或一串 A/B/C 级别。主报告不贴全部候选、逐项勾选表或全篇比喻清单。
 
-完整案例见 [examples/agent-memory-case/README.md](./examples/agent-memory-case/README.md)：包含改前检测与建议、改后全文、左右两列 HTML 对照和复测结论。
+完整案例见 [examples/agent-memory-case](https://github.com/larashero3-dotcom/lieflat-less-ai-tone/tree/main/examples/agent-memory-case)：包含改前检测与建议、改后全文、左右两列 HTML 对照和复测结论。
 
 表达方式示例（只示范一个指标段落，完整报告见案例）：
 
@@ -277,7 +277,7 @@ F 级可改的局部候选默认提出改法；保留要举出这处表达不可
 | 句长/段落长度不参差 | 曾疑 AI 均匀 | 配对复测两轮均无差异 | 不为节奏改句长 |
 | 「其」字用量 | — | 人类更多（反向） | 不删 |
 
-各条实测数据、测量脚本、被推翻的预设见 [RESEARCH.md](./RESEARCH.md)。
+各条实测数据、测量脚本、被推翻的预设见仓库根目录 [RESEARCH.md](https://github.com/larashero3-dotcom/lieflat-less-ai-tone/blob/main/RESEARCH.md)。
 
 ## 只能人审的（skill 明确不碰）
 

@@ -18,7 +18,7 @@ Three methods handled different kinds of evidence:
 | Model semantic assessment | Whether a candidate passage meets a narrowly defined semantic criterion | About 500,000 judgments during the study (431,000 in round two plus about 110,000 in a supplementary round), using Jev |
 | Human review | Metaphor aptness and errors in machine judgments | Sentence-level annotation and sample checks |
 
-The 500,000 judgments describe the **research**, not the number of model calls required to check one new draft. In ordinary use, the skill's scripts extract candidates and the current conversation model assesses them against the closed criteria in [references/semantic-criteria.md](./references/semantic-criteria.md).
+The 500,000 judgments describe the **research**, not the number of model calls required to check one new draft. In ordinary use, the skill's scripts extract candidates and the current conversation model assesses them against the closed criteria in [lieflat-less-ai-tone/references/semantic-criteria.md](./lieflat-less-ai-tone/references/semantic-criteria.md).
 
 ## What changed after the matched-pair test
 
@@ -32,12 +32,12 @@ The full Chinese analysis, including measure definitions, results, counterexampl
 
 ## How the skill works
 
-1. **Detect.** Run `scripts/detect.py` on a finished article, save the machine-readable result, extract semantic candidates, and assess those candidates against the closed criteria.
+1. **Detect.** Run `lieflat-less-ai-tone/scripts/detect.py` on a finished article, save the machine-readable result, extract semantic candidates, and assess those candidates against the closed criteria.
 2. **Report before editing.** Present a readable report with the draft's counts or rates, the corresponding research evidence, located original passages, proposed edits, and reasons for leaving other passages untouched. A finding in the research corpus is not a significance test on the individual draft.
 3. **Wait for a reply.** The user can accept the overall proposal with a short response or adjust its scope. The article is not rewritten before that reply.
 4. **Rewrite and recheck.** Make the smallest accepted changes, preserve facts and qualifications, run detection again, and provide a before-and-after report. The default report is Markdown; an HTML side-by-side view is available when requested.
 
-The [Agent memory article example](./examples/agent-memory-case/README.md) includes the initial report, revised article, side-by-side HTML comparison, and recheck conclusion. Operational rules and boundaries are in [SKILL.md](./SKILL.md); detection grades are explained in [DETECT.md](./DETECT.md).
+The [Agent memory article example](./examples/agent-memory-case/README.md) includes the initial report, revised article, side-by-side HTML comparison, and recheck conclusion. Operational rules and boundaries are in [SKILL.md](./lieflat-less-ai-tone/SKILL.md); detection grades are explained in [DETECT.md](./lieflat-less-ai-tone/DETECT.md).
 
 ## Install and try it
 
@@ -49,8 +49,10 @@ npx skills add larashero3-dotcom/lieflat-less-ai-tone
 
 Then give the assistant a finished Chinese article. It will report its findings and suggested changes first. Reply with the equivalent of “apply the suggestions” or specify a narrower scope to start rewriting.
 
+The skill itself lives in [`lieflat-less-ai-tone/`](./lieflat-less-ai-tone/). To install it manually, copy that directory into `~/.claude/skills/`.
+
 The corpus is not redistributed because of copyright and privacy constraints. The scripts, definitions, and decision criteria are provided so the method can be rerun on a corpus you are allowed to use. The reported figures are observations from these samples, not a universal authorship detector.
 
-**Files** [SKILL.md](./SKILL.md) · [DETECT.md](./DETECT.md) · [RESEARCH.md](./RESEARCH.md) · [scripts/](./scripts/) · [中文 README](./README.md)
+**Files** [SKILL.md](./lieflat-less-ai-tone/SKILL.md) · [DETECT.md](./lieflat-less-ai-tone/DETECT.md) · [RESEARCH.md](./RESEARCH.md) · [scripts/](./lieflat-less-ai-tone/scripts/) · [中文 README](./README.md)
 
 **License** [CC BY-NC 4.0](./LICENSE)
