@@ -1,6 +1,6 @@
 # Lieflat Less AI Tone
 
-[中文](README.md) | English
+[中文](README.md) | English | [日本語](README.ja.md)
 
 ![Lieflat Less AI Tone: 5.2M characters, 100+ measures, approximately 500K model semantic judgments](assets/less-ai-tone-hero-en.png)
 
