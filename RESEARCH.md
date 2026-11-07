@@ -191,7 +191,7 @@
 分母是段数，不是字数。
 
 ```
-python3 scripts/check-structure.py --human <目录...> --ai <目录...>
+python3 lieflat-less-ai-tone/scripts/check-structure.py --human <目录...> --ai <目录...>
 ```
 
 | 指标 | AI | 人类 | 倍率 | 人类侧稳定性 |
@@ -230,7 +230,7 @@ python3 scripts/check-structure.py --human <目录...> --ai <目录...>
 ## 翻译腔：18 种筛到 5 种
 
 ```
-python3 scripts/check-translationese.py <AI 语料目录...>
+python3 lieflat-less-ai-tone/scripts/check-translationese.py <AI 语料目录...>
 ```
 
 | 句式 | AI 每千字 | 覆盖 | 结论 |
@@ -302,13 +302,13 @@ GPT 破折号只有 0.11，有观点据此认为破折号已不算 AI 痕迹。�
 
 ```bash
 # 句级：人类 vs AI 各规则命中率
-python3 scripts/compare-human-ai.py --human <人类语料目录...> --ai <AI 语料目录...>
+python3 lieflat-less-ai-tone/scripts/compare-human-ai.py --human <人类语料目录...> --ai <AI 语料目录...>
 
 # 段落级：句子同构、段首零主语
-python3 scripts/check-structure.py --human <人类语料目录...> --ai <AI 语料目录...>
+python3 lieflat-less-ai-tone/scripts/check-structure.py --human <人类语料目录...> --ai <AI 语料目录...>
 
 # AI 侧：翻译腔各句式频率
-python3 scripts/check-translationese.py <AI 语料目录...>
+python3 lieflat-less-ai-tone/scripts/check-translationese.py <AI 语料目录...>
 ```
 
 三个脚本都只按目录参数读 `.md`，不含任何语料，也不用目录名做标签（语料目录常带来源信息，避免输出带出身份）。正则定义在脚本顶部，可直接改。
@@ -345,4 +345,4 @@ detect.py `HUMAN_REF` 与 report.py 人类参考列的每个硬编码值，出�
 
 ---
 
-**English** [RESEARCH.en.md](./RESEARCH.en.md) · **规则集** [SKILL.md](./SKILL.md) · **概览** [README.md](./README.md)
+**English** [RESEARCH.en.md](./RESEARCH.en.md) · **规则集** [SKILL.md](./lieflat-less-ai-tone/SKILL.md) · **概览** [README.md](./README.md)

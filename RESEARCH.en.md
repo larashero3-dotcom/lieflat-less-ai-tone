@@ -17,7 +17,7 @@ The matched design overturned several round-one editing rules:
 | Introductory sentence before a list marks generated text | Much more common on the human side | Rejected; do not edit |
 | Generated text systematically replaces concrete details with vague summaries | Symmetric review: 24.7% became more vague, 26.0% more specific; paired numerical density showed no difference | Rule withdrawn; preserve source facts through information conservation |
 
-Model results must be kept separate. For em dashes, Cliff's δ was −0.54 for GPT-5.6 and +0.95 for Opus 4.6: a pooled result would cancel opposing model fingerprints. Such features are reported with direction rather than turned into universal editing rules. Metaphor aptness is reserved for human review because model agreement was too low to support automatic edits. The current detection and rewrite policy is in [SKILL.md](./SKILL.md) and [DETECT.md](./DETECT.md); the full second-round tables and later corrections are in [RESEARCH.md](./RESEARCH.md).
+Model results must be kept separate. For em dashes, Cliff's δ was −0.54 for GPT-5.6 and +0.95 for Opus 4.6: a pooled result would cancel opposing model fingerprints. Such features are reported with direction rather than turned into universal editing rules. Metaphor aptness is reserved for human review because model agreement was too low to support automatic edits. The current detection and rewrite policy is in [SKILL.md](./lieflat-less-ai-tone/SKILL.md) and [DETECT.md](./lieflat-less-ai-tone/DETECT.md); the full second-round tables and later corrections are in [RESEARCH.md](./RESEARCH.md).
 
 ## First round: historical record
 
@@ -180,7 +180,7 @@ Quotation colons account for 41-45% of human colons against 27.6% for generated 
 The denominator is paragraph count, not character count. Using per-thousand-characters for structural features lets article shape distort the result.
 
 ```
-python3 scripts/check-structure.py --human <dirs...> --ai <dirs...>
+python3 lieflat-less-ai-tone/scripts/check-structure.py --human <dirs...> --ai <dirs...>
 ```
 
 | Metric | Generated | Human | *R* | Human-side stability |
@@ -219,7 +219,7 @@ The conditional distributions are nearly identical. Generated text simply has 3�
 ## Translationese: 18 filtered to 5
 
 ```
-python3 scripts/check-translationese.py <generated corpus dirs...>
+python3 lieflat-less-ai-tone/scripts/check-translationese.py <generated corpus dirs...>
 ```
 
 | Construction | Generated per 1k chars | Coverage | Decision |
@@ -292,13 +292,13 @@ The figures above come from a corpus that is not included, so they cannot be ver
 
 ```bash
 # Sentence level: per-rule hit rates, human vs generated
-python3 scripts/compare-human-ai.py --human <dirs...> --ai <dirs...>
+python3 lieflat-less-ai-tone/scripts/compare-human-ai.py --human <dirs...> --ai <dirs...>
 
 # Paragraph level: sentence isomorphism, zero-anaphora openings
-python3 scripts/check-structure.py --human <dirs...> --ai <dirs...>
+python3 lieflat-less-ai-tone/scripts/check-structure.py --human <dirs...> --ai <dirs...>
 
 # Generated side: translationese frequencies
-python3 scripts/check-translationese.py <dirs...>
+python3 lieflat-less-ai-tone/scripts/check-translationese.py <dirs...>
 ```
 
 All three read `.md` files from directory arguments only. They contain no corpus and do not use directory names as labels, since corpus directories often carry source information. Operator definitions sit at the top of each script.
@@ -307,4 +307,4 @@ When changing a rule, look at what the regular expression actually matches befor
 
 ---
 
-**中文版** [RESEARCH.md](./RESEARCH.md) · **Rule set** [SKILL.md](./SKILL.md) · **Overview** [README.en.md](./README.en.md)
+**中文版** [RESEARCH.md](./RESEARCH.md) · **Rule set** [SKILL.md](./lieflat-less-ai-tone/SKILL.md) · **Overview** [README.en.md](./README.en.md)

@@ -124,20 +124,20 @@ AI 在 Coding 能力提升的同时，写作的体感好像并没有同步变好
 
 ```bash
 # 第一步：脚本检测（只报告，不改写；--json 存档供第四步用）
-python3 scripts/detect.py <文件或目录> --json > /tmp/before.json
+python3 lieflat-less-ai-tone/scripts/detect.py <文件或目录> --json > /tmp/before.json
 
 # 第 1.5 步：语义层候选抽取 + 会话内模型按封闭判据判读
 #   （同义重命名段 / 段间衔接接口 / 冒号句 / 三连同构组，
-#     判据见 references/semantic-criteria.md，单篇约 40-80 条）
-python3 scripts/detect.py <文件> --candidates --out /tmp/candidates.json
+#     判据见 lieflat-less-ai-tone/references/semantic-criteria.md，单篇约 40-80 条）
+python3 lieflat-less-ai-tone/scripts/detect.py <文件> --candidates --out /tmp/candidates.json
 
 # 第二步：模型复核命中，报告本篇指标、研究显著性、例句、改法和排除项；等待用户回复
 
 # 第三步：收到用户回复后，按其接受或调整的方案改写（规则见 SKILL.md）
 
 # 第四步：复测 + 前后对比报告（默认 Markdown，--format html 出网页版）
-python3 scripts/detect.py <改后文件> --json > /tmp/after.json
-python3 scripts/report.py 原文 改后文 /tmp/before.json /tmp/after.json \
+python3 lieflat-less-ai-tone/scripts/detect.py <改后文件> --json > /tmp/after.json
+python3 lieflat-less-ai-tone/scripts/report.py 原文 改后文 /tmp/before.json /tmp/after.json \
     --semantic /tmp/candidates_labeled.json --out 去AI味报告.md
 ```
 
@@ -170,16 +170,16 @@ python3 scripts/report.py 原文 改后文 /tmp/before.json /tmp/after.json \
 
 ```bash
 # 单篇/单目录检测报告
-python3 scripts/detect.py <目录>
+python3 lieflat-less-ai-tone/scripts/detect.py <目录>
 
 # 人类 vs 生成语料的规则命中率对比（需自备语料）
-python3 scripts/compare-human-ai.py --human <目录...> --ai <目录...>
+python3 lieflat-less-ai-tone/scripts/compare-human-ai.py --human <目录...> --ai <目录...>
 
 # 段落级：句子同构（段首零回指已于 2026-10-26 移除：弱信号，与已反转的指代不清同族）
-python3 scripts/check-structure.py --human <目录...> --ai <目录...>
+python3 lieflat-less-ai-tone/scripts/check-structure.py --human <目录...> --ai <目录...>
 
 # 译文句式频率（生成侧）
-python3 scripts/check-translationese.py <目录...>
+python3 lieflat-less-ai-tone/scripts/check-translationese.py <目录...>
 ```
 
 语料因版权不入库，数字第三方无法直接核验；可复用的是方法、判定阈值和算子定义，全部在脚本内公开。换成自有语料即可重算全部指标。
@@ -193,7 +193,7 @@ python3 scripts/check-translationese.py <目录...>
 
 ---
 
-**规则集** [SKILL.md](./SKILL.md) · **检测协议** [DETECT.md](./DETECT.md) · **完整实测记录** [RESEARCH.md](./RESEARCH.md)
+**规则集** [SKILL.md](./lieflat-less-ai-tone/SKILL.md) · **检测协议** [DETECT.md](./lieflat-less-ai-tone/DETECT.md) · **完整实测记录** [RESEARCH.md](./RESEARCH.md)
 
 ## 8 安装与使用
 
@@ -205,8 +205,10 @@ npx skills add larashero3-dotcom/lieflat-less-ai-tone
 
 安装后给 AI 一篇成稿。它会先运行脚本并判读语义候选，交付有研究参照、原文例句和具体改法的检测报告。你回复「按建议改」或调整范围后，它才改写、复测并生成前后对比。完整演示见 [Agent 记忆问题案例](./examples/agent-memory-case/README.md)。
 
+skill 本体位于 [`lieflat-less-ai-tone/`](./lieflat-less-ai-tone/)。手动安装时，把这个目录复制到 `~/.claude/skills/` 下即可。
+
 ---
 
-**数据与代码** [scripts/](./scripts/) · **English** [README.en.md](README.en.md)
+**数据与代码** [scripts/](./lieflat-less-ai-tone/scripts/) · **English** [README.en.md](README.en.md)
 
 **许可** [CC BY-NC 4.0](./LICENSE)（署名-非商业性使用 4.0；商用授权联系作者）
