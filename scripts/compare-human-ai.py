@@ -12,6 +12,11 @@ import sys
 import collections
 from pathlib import Path
 
+# Windows 下输出被重定向或接管道时默认用 GBK，遇到特殊符号会报错；统一用 UTF-8 输出
+for _s in (sys.stdout, sys.stderr):
+    if hasattr(_s, "reconfigure"):
+        _s.reconfigure(encoding="utf-8")
+
 # 每条对应 SKILL.md 的一条规则，正则尽量贴规则的触发标记
 RULES = {
     "2 翻案腔": r"(?:不是|并非|不在于)[^，。！？\n]{1,20}[，]?(?:而是|而在于)",
