@@ -12,6 +12,11 @@ import re
 import sys
 from pathlib import Path
 
+# Windows 下输出被重定向或接管道时默认用 GBK，遇到特殊符号会报错；统一用 UTF-8 输出
+for _s in (sys.stdout, sys.stderr):
+    if hasattr(_s, "reconfigure"):
+        _s.reconfigure(encoding="utf-8")
+
 # 段首评论语：省掉回指成分时读者要翻回上一段
 COMMENT = re.compile(
     r"^(?:听起来|看起来|看上去|听上去|说白了|说到底|换句话说|意味着|值得注意|"

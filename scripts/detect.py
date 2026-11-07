@@ -26,6 +26,11 @@ import re
 import sys
 from pathlib import Path
 
+# Windows 下输出被重定向或接管道时默认用 GBK，遇到特殊符号会报错；统一用 UTF-8 输出
+for _s in (sys.stdout, sys.stderr):
+    if hasattr(_s, "reconfigure"):
+        _s.reconfigure(encoding="utf-8")
+
 EXTS = {".md", ".txt"}
 
 # ---------------- 正则指标（level, 名称, 模式, 人类参考/千字, 建议） ----------------
