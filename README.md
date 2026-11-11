@@ -2,6 +2,8 @@
 
 中文 | [English](README.en.md)
 
+**官网与商业授权：** [lieflat.work · Lieflat Less AI Tone](https://lieflat.work/skills/less-ai-tone/)
+
 ![去 AI 味 Skill：约 520 万字、100+ 项指标、约 50 万次模型语义判断](assets/less-ai-tone-hero-zh.png)
 
 **一个基于两轮实测语料（共 1,169 篇、约 520 万汉字、100+ 项指标、约 50 万次模型语义判断）的去 AI 味 skill：先交付有指标、研究参照、原文例句和改法的检测报告，用户回复后再改写和复测。**
@@ -209,4 +211,4 @@ npx skills add larashero3-dotcom/lieflat-less-ai-tone
 
 **数据与代码** [scripts/](./scripts/) · **English** [README.en.md](README.en.md)
 
-**许可** [CC BY-NC 4.0](./LICENSE)（署名-非商业性使用 4.0；商用授权联系作者）
+**许可** [CC BY-NC 4.0](./LICENSE)（署名-非商业性使用 4.0；商业使用请[在 lieflat.work 选择并购买授权](https://lieflat.work/skills/less-ai-tone/#pricing)）

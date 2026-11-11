@@ -2,6 +2,8 @@
 
 [中文](README.md) | English
 
+**Website & commercial licenses:** [lieflat.work · Lieflat Less AI Tone](https://lieflat.work/skills/less-ai-tone/)
+
 ![Lieflat Less AI Tone: 5.2M characters, 100+ measures, approximately 500K model semantic judgments](assets/less-ai-tone-hero-en.png)
 
 **A post-draft Chinese writing skill built from two rounds of comparison: 629 articles in the first round, 270 matched pairs in the second, about 5.2 million Chinese characters in total, and about 500,000 model semantic judgments.** It reports what it found, cites passages from your draft, and proposes specific edits. It rewrites only after you respond, then runs a second check and shows the changes.
@@ -53,4 +55,4 @@ The corpus is not redistributed because of copyright and privacy constraints. Th
 
 **Files** [SKILL.md](./SKILL.md) · [DETECT.md](./DETECT.md) · [RESEARCH.md](./RESEARCH.md) · [scripts/](./scripts/) · [中文 README](./README.md)
 
-**License** [CC BY-NC 4.0](./LICENSE)
+**License** [CC BY-NC 4.0](./LICENSE). For commercial use, [choose and purchase a license on lieflat.work](https://lieflat.work/skills/less-ai-tone/#pricing).
