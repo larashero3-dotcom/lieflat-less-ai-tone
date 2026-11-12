@@ -25,6 +25,11 @@ import re
 import sys
 from pathlib import Path
 
+# Windows 下输出被重定向或接管道时默认用 GBK，遇到特殊符号会报错；统一用 UTF-8 输出
+for _s in (sys.stdout, sys.stderr):
+    if hasattr(_s, "reconfigure"):
+        _s.reconfigure(encoding="utf-8")
+
 sys.path.insert(0, str(Path(__file__).parent))
 from detect import REGEX_HITS  # 名字 → 级别映射（A/B/H/X）
 
