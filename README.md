@@ -1,6 +1,6 @@
 # Lieflat Less AI Tone
 
-中文 | [English](README.en.md)
+中文 | [English](README.en.md) | [日本語](README.ja.md)
 
 **官网与商业授权：** [lieflat.work · Lieflat Less AI Tone](https://lieflat.work/skills/less-ai-tone/)
 
